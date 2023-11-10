@@ -1,0 +1,184 @@
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|l|l|}
+    \hline
+    \textbf{Lp.} & \textbf{Państwo} & \textbf{Kontynent} & \textbf{Stolica} \\ \hline
+    1   & Afganistan       & Azja      & Kabul     \\ \hline
+    2   & Albania          & Europa    & Tirana    \\ \hline
+    3   & Algieria         & Afryka    & Algier    \\ \hline
+    4   & Andora           & Europa    & Andora    \\ \hline
+    5   & Angola           & Afryka    & Luanda    \\ \hline
+    6   & Antigua i Barbuda& Ameryka Północna & Saint John's \\ \hline
+    7   & Arabia Saudyjska & Azja      & Rijad     \\ \hline
+    8   & Argentyna        & Ameryka Południowa & Buenos Aires \\ \hline
+    \end{tabular}
+    \caption{}
+    \label{tab:tabela1}
+\end{table}
+\section{Lista numerowana i punktowana}
+To jest przepis na danie. Zwróć uwagę na punktowy i numerację.
+
+\begin{itemize}
+    \item {Składniki - danie:}
+    \begin{enumerate}[label={\arabic*\textendash}, align=right]
+        \item 500 g filetów białej ryby (np. dorsz, morszczuk, mintaj)
+        \item 1,5 kg jabłek (najlepiej renet lub innych dobrych do pieczenia)
+        \item 2 łyżki rodzynek
+        \item 2 łyżki rumu
+        \item 1/2 łyżeczki mielonego cynamonu
+    \end{enumerate}
+    \end{itemize}
+\begin{itemize}
+    \item {Składniki - sos:}
+    \begin{enumerate}[label=\Alph*:]
+        \item 90 g masła
+        \item 125 g mąki
+        \item 80 g cukru pudru (lub drobnego brązowego)
+        \item Szczypta soli
+    \end{enumerate}
+    \end{itemize}
+\begin{itemize}
+    \item {Przygotowanie:}
+    \begin{enumerate}
+    \setcounter{enumi}{1}
+    \stepcounter{enumi}
+        \item Rodzynki włożyć do miseczki, zalać rumem, wymieszać i odstawić. Przygotować kruszonkę: na płaski talerz wyłożyć masło, mąkę, cukier i sól. Kroić wszystkie składniki nożem na jak najmniejsze kawałeczki, aż drobinki masła pokryją się mąką z cukrem.
+            \stepcounter{enumi}
+        \item Piekarnik nagrzać do 180 stopni C. Naczynie żaroodporne (ok. 20 x 30 cm) grubo wysmarować masłem. Jabłka obrać, pokroić na ćwiartki i wykroić gniazda nasienne. Każdą ćwiartkę jabłka pokroić na 4 cząstki i rozłożyć w naczyniu.
+            \stepcounter{enumi}
+        \item Rodzynki osączyć, ułożyć na jabłkach i oprószyć cynamonem. Owoce równomiernie posypać kruszonką. Wstawić do nagrzanego piekarnika i piec przez około 35 - 40 minut lub do czasu, aż kruszonka będzie dobrze zrumieniona i złocista.
+    \end{enumerate}
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 
+\documentclass[10pt, a4paper, polish]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{array}
+\usepackage{enumitem}
+
+
+\geometry{a4paper, margin=2cm}
+
+\title{Kolokwium LATEX - rząd P003}
+\author{Imię i Nazwisko}
+\date{30 listopada 2020}
+
+\begin{document}
+
+\maketitle
+
+\section*{Wprowadzenie}
+To jest wprowadzenie objaśniające nieco kolokwium. Zwróć uwagę, że jesteśmy w sekcji nienumerowanej. W sekcji tytułowej wpisz swoje prawdziwe imię i nazwisko. Jako datę wpisz ręcznie datę pisania kolokwium. W tytule znajduje się specjalny symbol. Ustaw czcionkę na 10 pkt, papier jako A4, dołącz pakiet polski. Spis treści jest na końcu. Wszystkie odsyłacze powinny być klikalne.
+
+\tableofcontents
+
+\section{Tabele}
+W tej sekcji numerowanej testujemy tabele. Wykonaj poniższą tabelkę. Jest ona na dole strony. Kolumny poza pierwszą są po lewej. Pierwsza kolumna jest wyśrodkowana. Sama tabela też jest wyśrodkowana.
+
+To jest odwołanie do tabeli \ref{tab:tabela1}.
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|l|l|}
+    \hline
+    \textbf{Lp.} & \textbf{Państwo} & \textbf{Kontynent} & \textbf{Stolica} \\ \hline
+    1   & Afganistan       & Azja      & Kabul     \\ \hline
+    2   & Albania          & Europa    & Tirana    \\ \hline
+    3   & Algieria         & Afryka    & Algier    \\ \hline
+    4   & Andora           & Europa    & Andora    \\ \hline
+    5   & Angola           & Afryka    & Luanda    \\ \hline
+    6   & Antigua i Barbuda& Ameryka Północna & Saint John's \\ \hline
+    7   & Arabia Saudyjska & Azja      & Rijad     \\ \hline
+    8   & Argentyna        & Ameryka Południowa & Buenos Aires \\ \hline
+    \end{tabular}
+    \caption{}
+    \label{tab:tabela1}
+\end{table}
+
+\section{Zdjęcia}
+Tutaj testujemy zdjęcia. Mamy parę tekstu lorem ipsum.
+\begin{figure}[h]
+    \centering
+    \caption{Rysunek 1: Ten rysunek jest w bieżącym miejscu tekstu. Szerokość to 35 punktów.}
+    \label{fig:rys1}
+\end{figure}
+
+\section{Lista numerowana i punktowana}
+To jest przepis na danie. Zwróć uwagę na punktowy i numerację.
+
+\begin{itemize}
+    \item {Składniki - danie:}
+    \begin{enumerate}[label={\arabic*\textendash}, align=right]
+        \item 500 g filetów białej ryby (np. dorsz, morszczuk, mintaj)
+        \item 1,5 kg jabłek (najlepiej renet lub innych dobrych do pieczenia)
+        \item 2 łyżki rodzynek
+        \item 2 łyżki rumu
+        \item 1/2 łyżeczki mielonego cynamonu
+    \end{enumerate}
+    \end{itemize}
+\begin{itemize}
+    \item {Składniki - sos:}
+    \begin{enumerate}[label=\Alph*:]
+        \item 90 g masła
+        \item 125 g mąki
+        \item 80 g cukru pudru (lub drobnego brązowego)
+        \item Szczypta soli
+    \end{enumerate}
+    \end{itemize}
+\begin{itemize}
+    \item {Przygotowanie:}
+    \begin{enumerate}
+    \setcounter{enumi}{1}
+    \stepcounter{enumi}
+        \item Rodzynki włożyć do miseczki, zalać rumem, wymieszać i odstawić. Przygotować kruszonkę: na płaski talerz wyłożyć masło, mąkę, cukier i sól. Kroić wszystkie składniki nożem na jak najmniejsze kawałeczki, aż drobinki masła pokryją się mąką z cukrem.
+            \stepcounter{enumi}
+        \item Piekarnik nagrzać do 180 stopni C. Naczynie żaroodporne (ok. 20 x 30 cm) grubo wysmarować masłem. Jabłka obrać, pokroić na ćwiartki i wykroić gniazda nasienne. Każdą ćwiartkę jabłka pokroić na 4 cząstki i rozłożyć w naczyniu.
+            \stepcounter{enumi}
+        \item Rodzynki osączyć, ułożyć na jabłkach i oprószyć cynamonem. Owoce równomiernie posypać kruszonką. Wstawić do nagrzanego piekarnika i piec przez około 35 - 40 minut lub do czasu, aż kruszonka będzie dobrze zrumieniona i złocista.
+    \end{enumerate}
+\end{itemize}
+
+\section{Wzory matematyczne}
+Tutaj testujemy wzory matematyczne. Wszystkie są wyśrodkowane w oddzielnym wierszu. Zwróć uwagę, że niektóre posiadają numery.
+
+\[
+\int \sin x \,dx = \sin^{-1} e^{\cos x} \cdot \frac{n-1}{n} + \frac{c}{n}
+\]
+
+\[
+R^2 = \left( \frac{x}{y} \right) \left( \frac{z}{w} \right) = \frac{c^2}{F^2} \sin \theta \cos \theta \,dx
+\]
+
+Opracowano na podstawie \url{https://www.kwestiasmaku.com/zielony_srodek/salatki_jablka/jablka_kruszonka/przepis.html}.
+
+\end{document}
